@@ -1,71 +1,107 @@
-# Getting Started with Create React App
+# Flashcard App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Flashcard App is a simple web application for creating and managing flashcards and quizzes. It is built using React and Redux Toolkit, making it easy to organize topics, cards, and quizzes.
 
-## Available Scripts
+Users are able to create their own topics, quizzes for those topics, and flashcards for those quizzes. 
+Users are also able to interact with their quizzes by flipping flashcards over.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Creating Topics](#creating-topics)
+- [Creating Quizzes](#creating-quizzes)
+- [Cards](#cards)
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Topics Management:** Create topics.
+- **Quizzes:** Create quizzes for specific topics.
+- **Cards:** Add flashcards to quizzes with a front and back side.
+- **Redux Integration:** State management is handled using Redux Toolkit for a predictable and manageable state.
 
-### `npm test`
+## Creating Topics
+### Topics
+![topics](./topics.png)
+### Create Topics
+![create-topics](./create-topics.png)
+### Created Topics
+![created-topics](./created-topics.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Creating Quizzes
+![create-quiz](./create-quiz.png)
 
-### `npm run build`
+## Cards
+Clicking on a card will show toggle between card front and back.
+### Front
+![quiz-front](./quiz-front.png)
+### Back
+![quiz-back](./quiz-back.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Overview
+After the creation of a topic and a quiz with cards they are depicted in the respective overviews:
+### Topics overview
+![topics-overview](./topics-overview.png)
+### Quiz overview
+![quiz-overview](./quiz-overview.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Before you start, ensure you have the following software and tools installed:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [Node.js and npm](https://nodejs.org/)
+- [Git](https://git-scm.com/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   git clone https://github.com/yourusername/flashcard-app.git
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Change to the project directory:
 
-### Code Splitting
+   ```bash
+   cd flashcard-app
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Install project dependencies:
 
-### Analyzing the Bundle Size
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Running the App
 
-### Making a Progressive Web App
+1. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   npm start
+   ```
 
-### Advanced Configuration
+2. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to access the Flashcard App.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Usage
 
-### Deployment
+The Flashcard App is a user-friendly interface for creating and managing flashcards and quizzes. Here's how you can use it:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Create Topics:
+   - Click the "Add Topic" button.
+   - Enter a topic name and choose an icon.
+   - Click "Add Topic" to create a new topic.
 
-### `npm run build` fails to minify
+2. Add Quiz with Flashcards:
+   - Select a topic from the sidebar.
+   - Click "Add Card" in the topic view.
+   - Enter the front and back of the flashcard.
+   - Click "Create Quiz" to add the flashcard to the topic.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# flashcards
+
